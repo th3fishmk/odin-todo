@@ -48,6 +48,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    border: 1rem solid transparent;
 }
 .info {
     display: flex;
@@ -56,29 +58,69 @@ body {
     gap: 1rem;
 }
 
-.tasks {
-    min-height: 20px;
+.tasks-container {
+    display: flex;
+    min-height: 50px;
     width: 100%;
-    border: 20px solid transparent;
+    border-radius: 8px;
+    background-color: #213547;
+    gap: 1rem;
+    justify-content: space-between;
+    border: 10px solid transparent;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 button {
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
+    /* padding: 0.6em 1.2em; */
+    /* font-size: 1em; */
+    /* font-weight: 500; */
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
 }
+.tasks-container button {
+    height: 30px;
+    width: 30px;
+}
+
 button:hover {
     border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+.void {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    color: #646cff;
+    border-left: 1rem solid transparent;
+    border-radius: 8px;
+}
+
+.task:hover {
+    background-color: #646cff;
+    color: white;
+}
+
+#editor {
+    background-color: #646cff;
+    border-radius: 40px;
+    border: 2rem solid #242424;
 }
 
 @media (prefers-color-scheme: light) {
