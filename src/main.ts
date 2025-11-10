@@ -1,5 +1,5 @@
 import "./style.css";
-import { Todos, type ToDo } from "./tasks/todos";
+import { type ToDo, Todos } from "./tasks/todos";
 import { Configurations } from "./user";
 
 const configs = new Configurations();

@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/vite.svg" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <title>todo-list</title>
-    </head>
-    <body>
-        <div id="app">
-            <div id="user">
-                <div id="profile">
-                    <div class="info">
-                        <img
-                            src="https://cdn.pixabay.com/photo/2023/05/02/10/35/avatar-7964945_1280.png"
-                            alt="Profile pic"
-                            width="100px" />
-                        <h3 id="username"></h3>
-                    </div>
-                </div>
-                <div class="tasks-container">
-                    <div class="title">
-                        <div>Quick tasks</div>
-                        <button>+</button>
-                    </div>
-                    <div id="quick-tasks"></div>
-                </div>
-                <div class="tasks-container">
-                    <div class="title">
-                        <div>Projects</div>
-                        <button>+</button>
-                    </div>
-                    <div id="projects"></div>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon"
+        type="image/svg+xml"
+        href="/vite.svg" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="user">
+            <div id="profile">
+                <div class="info">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/02/10/35/avatar-7964945_1280.png"
+                        alt="Profile pic"
+                        width="100px" />
+                    <h3 id="username"></h3>
                 </div>
             </div>
-            <div id="editor"></div>
+            <div class="tasks-container">
+                <div class="title">
+                    <div>Quick tasks</div>
+                    <button>+</button>
+                </div>
+                <div id="quick-tasks"></div>
+            </div>
+            <div class="tasks-container">
+                <div class="title">
+                    <div>Projects</div>
+                    <button>+</button>
+                </div>
+                <div id="projects"></div>
+            </div>
         </div>
-        <script
-            type="module"
-            src="/src/main.ts"></script>
-    </body>
+        <div id="editor"></div>
+    </div>
+    <script type="module"
+        src="/src/main.ts"></script>
+</body>
+
 </html>
