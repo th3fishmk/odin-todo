@@ -12,12 +12,14 @@
         <div class="cont-flex-column">
           <h1>Welcome back!</h1>
           <div class="search-bar cont-flex-column">
-            <input
+            <!-- <input
               type="text"
               name="search"
               id="search"
               placeholder="Search your notes or To Dos"
-            >
+              autocomplete="off"
+              autofocus
+            > -->
           </div>
         </div>
         <div class="user-container cont-flex center">
@@ -31,32 +33,7 @@
         </div>
       </div>
       <div id="app">
-        <div id="notes-container">
-          <div class="note">
-            <h2 class="note-title">Title</h2>
-            <article class="note-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nihil
-              nobis impedit reiciendis temporibus asperiores ex voluptatum
-              quidem magni, voluptatem ipsum sed quibusdam vero neque, nam
-              cupiditate dolore eveniet incidunt.
-            </article>
-            <div class="metadata cont-flex">
-              <h3 class="dueDate">
-                Due
-                <input type="date" name="" id="">
-              </h3>
-              <h3>
-                Priority
-                <!-- <input type="text" id="priority" name="priority"> -->
-                <select name="priorities" id="priority">
-                  <option value="0">low</option>
-                  <option value="1">medium</option>
-                  <option value="2">high</option>
-                </select>
-              </h3>
-            </div>
-          </div>
-        </div>
+        <div id="notes-container"></div>
       </div>
     </div>
     <div class="plus-button">
