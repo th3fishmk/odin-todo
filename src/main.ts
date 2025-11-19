@@ -1,6 +1,5 @@
-import { renderNotes, type note } from "./note";
+import { type Note, renderNotes } from "./note";
 import "./style.css";
-console.log("Starting app...");
 
 const header = document.getElementById("app-header");
 const noteContainer = document.getElementById("notes-container");
@@ -13,6 +12,6 @@ if (noteContainer) {
   renderNotes(noteContainer);
 }
 
-const notes: note[] = [];
+const notes: Note[] = [];
 
 console.log(notes.length);
