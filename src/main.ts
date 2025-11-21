@@ -1,4 +1,4 @@
-import { type Note, renderNotes } from "./note";
+import { type Note, renderNotes } from "./notes/note";
 import "./style.css";
 
 const header = document.getElementById("app-header");
